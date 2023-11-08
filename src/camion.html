@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camión de Recogida de Residuos</title>
+  <!-- Enlaza los archivos CSS y JavaScript de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Barra de navegación de Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Camion</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="punto_recogida.html">Punto de Recogida</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="trabajador.html">Trabajador</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="camion.html">Camión</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ruta.html">Ruta</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido de la página -->
+  <div class="container mt-4" itemscope itemtype="http://schema.org/Product">
+    <h1 itemprop="name">Camión de Recogida de Residuos</h1>
+    <p>Información sobre nuestro camión de recogida de residuos.</p>
+    <img src="../images/camion.jpg" class="img-fluid" alt="Camión de Recogida de Residuos" itemprop="image">
+    <p>Detalles del camión:</p>
+    <ul>
+      <li>Marca: <span itemprop="brand">Mercedes-Benz</span></li>
+      <li>Modelo: <span itemprop="model">320</span></li>
+      <li>Año de fabricación: <span itemprop="productionDate">2010</span></li>
+    </ul>
+    <!-- Ofertas y reseñas -->
+    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+      <meta itemprop="priceCurrency" content="USD" />
+      <span itemprop="price">100000</span>
+      <link itemprop="availability" href="http://schema.org/InStock" />
+    </div>
+    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+      <meta itemprop="ratingValue" content="4.5" />
+      <meta itemprop="bestRating" content="5" />
+      <meta itemprop="worstRating" content="1" />
+      <span itemprop="ratingCount">25</span> calificaciones
+    </div>
+  </div>
+
+  <!-- Datos estructurados con Schema.org -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Product",
+      "name": "Camión de Recogida de Residuos",
+      "brand": "Mercedes-Benz",
+      "model": "320",
+      "productionDate": "2010",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "100000",
+        "availability": "http://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "25"
+      }
+    }
+  </script>
+
+  <!-- Enlaza los archivos JavaScript de Bootstrap (jQuery y Popper.js son requeridos) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

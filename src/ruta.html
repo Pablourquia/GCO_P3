@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruta de Recogida</title>
+  <!-- Enlaza los archivos CSS y JavaScript de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Barra de navegación de Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Ruta de Recogida</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="punto_recogida.html">Punto de Recogida</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="trabajador.html">Trabajador</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="camion.html">Camión</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ruta.html">Ruta</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido de la página -->
+  <div class="container mt-4">
+    <h1>Ruta de Recogida</h1>
+    <p>Información sobre una ruta de recogida de residuos.</p>
+    <p>Detalles de la ruta:</p>
+    <ul>
+      <li>Nombre de la ruta: Ruta 1</li>
+      <li>Descripción: Esta ruta cubre la zona norte de la ciudad.</li>
+      <li>Horario: Lunes a viernes de 8:00 AM a 4:00 PM</li>
+    </ul>
+  </div>
+
+  <!-- Datos estructurados con Schema.org -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Event",
+      "name": "Ruta 1",
+      "description": "Esta ruta cubre la zona norte de la ciudad.",
+      "location": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nombre de la localidad",
+        "streetAddress": "Dirección de la ruta"
+      },
+      "startDate": "2023-11-08T08:00",
+      "endDate": "2023-11-08T16:00"
+    }
+  </script>
+
+  <!-- Enlaza los archivos JavaScript de Bootstrap (jQuery y Popper.js son requeridos) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
